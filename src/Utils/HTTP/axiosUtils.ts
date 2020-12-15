@@ -1,8 +1,8 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
 export default class AxiosGateWay {
-    public static GET(url: string) {
-        var response = axios.get(url);
+    public static GET(url: string, config?: any) {
+        var response = axios.get(url, config);
         response.then(
             result => {
             }
